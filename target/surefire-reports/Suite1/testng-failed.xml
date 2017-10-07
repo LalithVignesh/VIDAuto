@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite1]">
+  <test name="Nopackage">
+    <classes>
+      <class name="test.java.OneTest"/>
+      <class name="test.java.TWOTest"/>
+    </classes>
+  </test> <!-- Nopackage -->
+  <test name="Nopackage(failed)">
+    <classes>
+      <class name="test.java.TWOTest">
+        <methods>
+          <include name="Sum"/>
+          <include name="Sum1"/>
+        </methods>
+      </class> <!-- test.java.TWOTest -->
+      <class name="test.java.OneTest">
+        <methods>
+          <include name="Sum1"/>
+          <include name="Sum"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.java.OneTest -->
+    </classes>
+  </test> <!-- Nopackage(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
