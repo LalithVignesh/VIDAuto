@@ -16,7 +16,7 @@ public class DesiredCaps {
 AndroidDriver driver ;
 @BeforeTest
 public void setUp() throws MalformedURLException {
-    File app = new File("E:\\Vidhya\\Vidhya Work\\OXMobile.apk");
+    File app = new File("E:\\Vidhya\\Vidhya Work\\POEMS SG 2.0.apk");
     DesiredCapabilities caps = new DesiredCapabilities();
     caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Redmi");
     caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "");

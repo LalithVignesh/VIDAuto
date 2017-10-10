@@ -7,21 +7,4 @@
       <class name="test.java.TWOTest"/>
     </classes>
   </test> <!-- Nopackage -->
-  <test name="Nopackage(failed)">
-    <classes>
-      <class name="test.java.TWOTest">
-        <methods>
-          <include name="Sum"/>
-          <include name="Sum1"/>
-        </methods>
-      </class> <!-- test.java.TWOTest -->
-      <class name="test.java.OneTest">
-        <methods>
-          <include name="Sum1"/>
-          <include name="Sum"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- test.java.OneTest -->
-    </classes>
-  </test> <!-- Nopackage(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
